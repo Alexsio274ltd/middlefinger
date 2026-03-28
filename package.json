@@ -20,7 +20,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview",
-    "shadcn:add": "pnpm dlx shadcn@canary add"
+    "shadcn:add": "pnpm dlx shadcn@canary add",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "dependencies": {
     "@eth-optimism/viem": "^0.3.2",
